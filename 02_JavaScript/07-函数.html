@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        /*
+            函数的第一种定义方式、使用function关键字
+         */
+        //定义一个无参函数
+        function fun(){
+            alert("无参函数被执行")
+        }
+        //调用函数
+        fun();
+        //有参函数
+        function fun2(a,b){
+            var result = a + b;
+            return result;
+        }
+        alert(fun2(2,5));
+
+        /*
+            函数的第二种定义方式
+         */
+        var fun3 = function (a,b,c){
+                var res = a+b+c;
+                return res;
+        }
+
+        alert(fun3(2,3,5));
+
+        /*
+            java中有函数重载，但在js中无，函数重载时，后一个函数的定义会覆盖前一个
+         */
+
+        var fun3 = function (){ alert("函数无法重载"); }
+        fun3();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

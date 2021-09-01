@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量</title>
+    <script type="text/javascript">
+        var i;
+        alert(i); //undefined
+        alert(typeof(i));//undefined
+        i=12;
+        //typeof()是函数，得到变量类型返回
+        alert(i); //12
+        alert(typeof (i));//number
+        i="123";
+        alert(typeof (i));//string
+        var a=2;
+        var b="abc";
+        alert(a*b); //NaN
+        //若b="123"，则在做运算时，会自动转换成数值型
+    </script>
+</head>
+<body>
+
+</body>
+</html>

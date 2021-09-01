@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+        函数的 arguments 隐形参数（只在 function 函数内）
+        就是在 function 函数中不需要定义，但却可以直接用来获取所有参数的变量。
+        我们管它叫隐形参数。 隐形参数特别像 java 基础的可变长参数一样，操作类似数组。
+    -->
+    <script type="text/javascript">
+        function fun(){
+            alert(arguments);//[object Arguments]
+            alert(arguments.length); //查看参数个数
+            alert(arguments[0]);
+            alert(arguments[1]);
+            alert(arguments[2]);
+        }
+        fun();//0
+        fun(1,"sda"); //2
+    </script>
+</head>
+<body>
+
+</body>
+</html>

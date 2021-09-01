@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="verification_code">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/book_project/web/WEB-INF/lib/kaptcha-2.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Z_Nebula_YZH/java学习/尚硅谷java/3.尚硅谷JavaWEB/尚硅谷JavaWeb_2020idea新版/资料/13-cookie和session/笔记/谷歌验证码/kaptcha-2.3.2.zip!/src/java" />
+    </SOURCES>
+  </library>
+</component>

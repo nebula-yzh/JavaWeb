@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        //在页面加载之后执行，此时才会有body标签
+        window.onload = function () {
+            //使用js代码创建标签对象，并显示在页面上
+            //标签内容为 <div>内容</div>
+            var divObj = document.createElement("div");  // 创建div标签，但还在内存中
+
+           // divObj.innerHTML = "内容"; //变成  <div>内容</div>
+            var textNode = document.createTextNode("nebula"); //添加文本结点
+            divObj.appendChild(textNode);
+            document.body.appendChild(divObj);  //往body标签中添加子标签
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

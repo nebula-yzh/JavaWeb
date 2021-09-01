@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="http://localhost:8080/07_servlet/param" method="get">
+    <table>
+        <tr>
+            <td>用户名:</td>
+            <td><input type="text" name="username"/></td>
+        </tr>
+        <tr>
+            <td>密码:</td>
+            <td><input type="password" name="password"/></td>
+        </tr>
+        <tr>
+            <td>兴趣爱好：</td>
+            <td>
+                <input type="checkbox" name="hobby" value="cpp"/>c++
+                <input type="checkbox" name="hobby" value="java"/>java
+                <input type="checkbox" name="hobby" value="js"/>javascript
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="提交"/></td>
+        </tr>
+    </table>
+    <a href="/">斜杠</a>  <!-- 斜杠被浏览器解析为：http://ip:port/ -->
+</form>
+</body>
+</html>

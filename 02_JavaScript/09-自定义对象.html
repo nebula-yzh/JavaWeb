@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--第一种、
+        Object 形式的自定义对象
+        对象的定义：
+             var 变量名 = new Object();    //对象实例（空对象）
+             变量名.属性名 = 值;            // 定义一个属性
+             变量名.函数名 = function(){}   // 定义一个函数
+
+             对象的访问： 变量名.属性 / 函数名();
+    -->
+    <script type="text/javascript">
+        var people = new Object();
+        people.name = "nebula";
+        people.age = 23;
+        people.gender = "male";
+        people.showInfo = function (){
+            alert("name:"+this.name+"\nage:"+this.age+"\ngender:"+this.gender);
+        }
+
+        people.showInfo();
+    </script>
+    <!--第二种、
+        {}花括号形式的自定义对象
+            对象的定义：
+                var 变量名 = { // 空对象
+                属性名：值, // 定义一个属性
+                属性名：值, // 定义一个属性
+                函数名：function(){} // 定义一个函数
+                };
+
+            对象的访问： 变量名.属性 / 函数名();
+    -->
+    <script type="text/javascript">
+        var student = {
+            name : "butterfly",
+            age : 24,
+            gender : "female",
+            showInfo : function (){
+                alert("name:"+this.name+"\nage:"+this.age+"\ngender:"+this.gender);
+            }
+        };
+        student.showInfo();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
